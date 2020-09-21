@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RGB Selector</title>
+  </head>
+  <body>
+    <h1>RGB Selector</h1>
+    <div id="selectors">
+      <div class="container">
+        <label for="red">R:</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          value="0"
+          name="red"
+          id="red"
+        /><input type="text" value="0" id="redValue" disabled /><br />
+        <hr />
+        <br />
+        <label for="green">G:</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          value="0"
+          name="green"
+          id="green"
+        />
+        <input type="text" value="0" id="greenValue" disabled />
+        <br />
+        <hr />
+        <br />
+        <label for="blue">B:</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          value="0"
+          name="blue"
+          id="blue"
+        /><input type="text" value="0" id="blueValue" disabled />
+      </div>
+    </div>
+    <div id="colorBox">
+      <output id="hex">#000000</output>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
